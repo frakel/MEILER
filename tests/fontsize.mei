@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<?xml-model href="https://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0" xmlns:meiler="NS:MEILER_TEST">
   <meiHead>
     <fileDesc>
       <titleStmt>
-        <title/>
+        <title>Different font sizes</title>
       </titleStmt>
-      <pubStmt/>
+      <pubStmt>
+        <respStmt>
+          <persName>Klaus Rettinghaus</persName>
+        </respStmt>
+      </pubStmt>
+      <seriesStmt>
+        <title>MEILER test files</title>
+      </seriesStmt>
     </fileDesc>
   </meiHead>
   <music>
@@ -28,7 +34,7 @@
                   <note xml:id="n03" dur="4" oct="4" pname="g"/>
                 </layer>
               </staff>
-              <dir startid="#n01" place="above"><rend fontsize="large">x-large</rend></dir>
+              <dir startid="#n01" place="above"><rend fontsize="x-large">x-large</rend></dir>
               <dir startid="#n02" place="above"><rend fontsize="x-small">x-small</rend></dir>
               <dir startid="#n03" place="above"><rend fontsize="12.34">12.34</rend></dir>
             </measure>
@@ -40,7 +46,7 @@
                   <note xml:id="n06" dur="4" oct="4" pname="g" fontsize="small"/>
                 </layer>
               </staff>
-              <dir startid="#n04" place="above"><rend fontsize="21pt">22pt</rend></dir>
+              <dir startid="#n04" place="above"><rend fontsize="21pt">21pt</rend></dir>
               <dir startid="#n05" place="above"><rend fontsize="54.32%">54.32%</rend></dir>
               <dir startid="#n06" place="above"><rend fontsize="72%">72%</rend></dir>
             </measure>

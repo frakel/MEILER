@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0">
+<?xml-model href="https://music-encoding.org/schema/3.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="3.0.0" xmlns:meiler="NS:MEILER_TEST">
   <meiHead>
     <fileDesc>
       <titleStmt>
-        <title/>
+        <title></title>
       </titleStmt>
-      <pubStmt/>
+      <pubStmt>
+        <respStmt>
+          <persName>Klaus Rettinghaus</persName>
+        </respStmt>
+      </pubStmt>
       <seriesStmt>
         <title>MEILER test files</title>
       </seriesStmt>
@@ -53,8 +56,9 @@
               <mordent startid="#n10" accidlower="n"/>
               <trill startid="#n11" accidupper="f"/>
               <turn startid="#n12" accidlower="s"/>
-              <trill glyphname="ornamentPrecompSlideTrillDAnglebert" place="above" startid="#n13"
-                accidlower="n" accidupper="s"/>
+              <ornam place="above" startid="#n13" accidlower="n" accidupper="s">
+                <symbol glyphname="ornamentPrecompSlideTrillDAnglebert" />
+              </ornam>
             </measure>
           </section>
         </score>

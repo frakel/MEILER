@@ -36,13 +36,16 @@ List of supported MEI elements and attributes
 * `<barLine>`
   * `@color`
   * `@form`
+  * `@xml:id`
 
 * `<beam>`
   * `@color`
+  * `@form` (for values 'acc' and 'rit')
   * `@xml:id`
 
 * `<beamSpan>`
   * `@color`
+  * `@form` (for values 'acc' and 'rit')
   * `@xml:id`
 
 * `<bTrem>`
@@ -99,7 +102,10 @@ List of supported MEI elements and attributes
 
 * `<dynam>`
   * `@endid`
+  * `@extender`
   * `@ho`
+  * `@lform`
+  * `@lwidth`
   * `@place`
   * __`@startid`__
   * `@vo`
@@ -118,6 +124,7 @@ List of supported MEI elements and attributes
 
 * `<fermata>`
   * `@color`
+  * `@glyphname`
   * `@glyphnum`
   * `@ho`
   * `@place`
@@ -225,6 +232,7 @@ List of supported MEI elements and attributes
   * `@accidupper`
   * `@color`
   * `@form`
+  * `@glyphname`
   * `@glyphnum`
   * `@ho`
   * `@long`
@@ -240,6 +248,7 @@ List of supported MEI elements and attributes
   * `@fermata`
   * `@ho`
   * `@loc`
+  * `@sameas`
   * `@visible`
   * `@vo`
   * `@xml:id`
@@ -305,6 +314,14 @@ List of supported MEI elements and attributes
 * `<orig>`
   * `@source`
 
+* `<ornam>`
+  * `@accidlower`
+  * `@accidupper`
+  * `@color`
+  * `@place`
+  * __`@startid`__
+  * `@xml:id`
+
 * `<p>`
 
 * `<pb>`
@@ -322,6 +339,8 @@ List of supported MEI elements and attributes
   * __`@startid`__
   * `@vo`
   * `@xml:id`
+
+* `<pgHead>`
 
 * `<phrase>`
   * `@bezier`
@@ -379,8 +398,11 @@ List of supported MEI elements and attributes
   * `@fermata`
   * `@ho`
   * `@loc`
+  * `@num`
+  * `@numbase`
   * `@oloc`
   * `@ploc`
+  * `@sameas`
   * `@staff`
   * `@visible`
   * `@vo`
@@ -401,6 +423,7 @@ List of supported MEI elements and attributes
     * `@clef.shape`
     * `@dynam.dist`
     * `@ending.rend` (for values 'top' and 'grouped')
+    * `@harm.dist`
     * `@key.accid`
     * `@key.mode`
     * `@key.pname`
@@ -466,6 +489,7 @@ List of supported MEI elements and attributes
   * `@clef.line`
   * `@clef.shape`
   * `@dynam.dist`
+  * `@harm.dist`
   * `@key.accid`
   * `@key.mode`
   * `@key.pname`
@@ -506,6 +530,12 @@ List of supported MEI elements and attributes
   * `@wordpos`
   * `@xml:id`
 
+* `<symbol>`
+  * `@color`
+  * `@glyphname`
+  * `@glyphnum`
+  * `@xml:id`
+
 * `<tempo>`
   * `@ho`
   * `@midi.bpm`
@@ -539,6 +569,7 @@ List of supported MEI elements and attributes
   * `@accidupper`
   * `@color`
   * `@endid`
+  * `@glyphname`
   * `@glyphnum`
   * `@ho`
   * `@place`
@@ -552,26 +583,32 @@ List of supported MEI elements and attributes
   * `@color`
   * `@copyof`
   * __`@num`__
-  * __`@numbase`__
   * `@num.format`
+  * `@num.place`
   * `@num.visible`
+  * __`@numbase`__
+  * `@xml:id` (assigned to LilyPond's TupletNumber grob)
 
 * `<tupletSpan>`
   * `@bracket.place`
   * `@bracket.visible`
   * `@color`
+  * `@copyof`
   * `@endid`
   * __`@num`__
-  * __`@numbase`__
   * `@num.format`
+  * `@num.place`
   * `@num.visible`
+  * __`@numbase`__
   * `@startid`
+  * `@xml:id` (assigned to LilyPond's TupletNumber grob)
 
 * `<turn>`
   * `@accidlower`
   * `@accidupper`
   * `@color`
   * `@form`
+  * `@glyphname`
   * `@glyphnum`
   * `@ho`
   * `@place`
